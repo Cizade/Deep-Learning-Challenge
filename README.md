@@ -61,3 +61,5 @@ The workflow:
 Four optimisation passes raised the baseline accuracy only marginally (best ~72.8 %).  The feed-forward neural network struggled to capture the many sparse one-hot features without overfitting, and class imbalance limited further gains.  
 
 A different model family is likely better suited here.  Gradient-boosted decision trees (e.g., XGBoost or LightGBM) naturally handle high-dimensional, sparse, mixed-type tabular data and usually score 78–82 % on this dataset with minimal tuning.  Future work should pivot to a tree-based ensemble or incorporate feature engineering (embedding categorical variables or combining one-hots into target-encoded columns) before returning to a neural network approach.
+
+Original code was written by myself. Optimization and error-handling assisted by ChatGPT o3
